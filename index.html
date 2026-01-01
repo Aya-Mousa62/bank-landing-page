@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon-2.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Digitalbank | Landing Page</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="nav__brand">
+          <img
+            src="images/logo-dark.svg"
+            alt="Digitalbank"
+            class="logo logo--light-bg"
+          />
+          <img
+            src="images/logo-light.svg"
+            alt="Digitalbank"
+            class="logo logo--dark-bg"
+          />
+        </div>
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <img
+            src="images/icon-hamburger.svg"
+            alt=""
+            class="nav__toggle-icon open"
+          />
+          <img
+            src="images/icon-close.svg"
+            alt=""
+            class="nav__toggle-icon close"
+          />
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav id="nav-menu" class="nav__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#blog">Blog</a>
+          <a href="#careers">Careers</a>
+        </nav>
+        <div class="nav__actions">
+          <button
+            class="button button--ghost theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+          <a
+            class="button button--primary nav__cta track-cta js-open-invite"
+            href="#cta"
+            >Request Invite</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <h1>Next generation digital banking</h1>
+            <p>
+              Take your financial life online. Your Digitalbank account will be
+              a one-stop-shop for spending, saving, budgeting, investing, and
+              much more.
+            </p>
+            <a
+              class="button button--primary track-cta js-open-invite"
+              href="#cta"
+              >Request Invite</a
+            >
+          </div>
+          <div class="hero__visual" aria-hidden="true">
+            <picture class="hero__background">
+              <source
+                media="(max-width: 960px)"
+                srcset="images/bg-intro-mobile.svg"
+              />
+              <img src="images/bg-intro-desktop.svg" alt="" loading="lazy" />
+            </picture>
+            <img
+              src="images/image-mockups.png"
+              alt=""
+              class="hero__mockups"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="features">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Why choose Digitalbank?</h2>
+            <p>
+              We leverage Open Banking to turn your bank account into your
+              financial hub. Control your finances like never before.
+            </p>
+          </div>
+          <div class="feature-grid">
+            <article class="card feature">
+              <img src="images/icon-online.svg" alt="" class="feature__icon" />
+              <h3>Online Banking</h3>
+              <p>
+                Our modern web and mobile applications allow you to keep track
+                of your finances wherever you are in the world.
+              </p>
+            </article>
+            <article class="card feature">
+              <img
+                src="images/icon-budgeting.svg"
+                alt=""
+                class="feature__icon"
+              />
+              <h3>Simple Budgeting</h3>
+              <p>
+                See exactly where your money goes each month. Receive
+                notifications when you’re close to hitting your limits.
+              </p>
+            </article>
+            <article class="card feature">
+              <img
+                src="images/icon-onboarding.svg"
+                alt=""
+                class="feature__icon"
+              />
+              <h3>Fast Onboarding</h3>
+              <p>
+                We don’t do branches. Open your account in minutes online and
+                start taking control of your finances right away.
+              </p>
+            </article>
+            <article class="card feature">
+              <img src="images/icon-api.svg" alt="" class="feature__icon" />
+              <h3>Open API</h3>
+              <p>
+                Manage your savings, investments, pension, and much more from
+                one account. Tracking your money has never been easier.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="articles">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Latest Articles</h2>
+          </div>
+          <div class="article-grid">
+            <article class="card article">
+              <picture class="article__image">
+                <img src="images/image-currency.jpg" alt="Currency and coins" />
+              </picture>
+              <div class="article__body">
+                <p class="article__author">By Claire Robinson</p>
+                <h3>
+                  <a href="#blog">Receive money in any currency with no fees</a>
+                </h3>
+                <p>
+                  The world is getting smaller and we’re becoming more mobile.
+                  So why should you be forced to only receive money in a single
+                  …
+                </p>
+              </div>
+            </article>
+            <article class="card article">
+              <picture class="article__image">
+                <img
+                  src="images/image-restaurant.jpg"
+                  alt="Restaurant table with food"
+                />
+              </picture>
+              <div class="article__body">
+                <p class="article__author">By Wilson Hutton</p>
+                <h3>
+                  <a href="#blog"
+                    >Treat yourself without worrying about money</a
+                  >
+                </h3>
+                <p>
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you …
+                </p>
+              </div>
+            </article>
+            <article class="card article">
+              <picture class="article__image">
+                <img
+                  src="images/image-plane.jpg"
+                  alt="Plane wing above clouds"
+                />
+              </picture>
+              <div class="article__body">
+                <p class="article__author">By Wilson Hutton</p>
+                <h3>
+                  <a href="#blog">Take your Digitalbank card wherever you go</a>
+                </h3>
+                <p>
+                  We want you to enjoy your travels. This is why we don’t charge
+                  any fees on purchases while you’re abroad. We’ll even show you
+                  …
+                </p>
+              </div>
+            </article>
+            <article class="card article">
+              <picture class="article__image">
+                <img
+                  src="images/image-confetti.jpg"
+                  alt="People celebrating with confetti"
+                />
+              </picture>
+              <div class="article__body">
+                <p class="article__author">By Claire Robinson</p>
+                <h3>
+                  <a href="#blog"
+                    >Our invite-only Beta accounts are now live!</a
+                  >
+                </h3>
+                <p>
+                  After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite through
+                  the site ...
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Plans for every stage</h2>
+            <p>
+              Choose the plan that fits your journey. Upgrade or downgrade
+              anytime.
+            </p>
+          </div>
+          <div class="pricing-grid">
+            <article class="card pricing__card">
+              <div class="pricing__label">Starter</div>
+              <div class="pricing__price">$0<span>/mo</span></div>
+              <ul>
+                <li>Instant transfers</li>
+                <li>Virtual and physical cards</li>
+                <li>Budget alerts</li>
+              </ul>
+              <button
+                class="button button--primary js-open-invite track-cta"
+                type="button"
+              >
+                Choose Starter
+              </button>
+            </article>
+            <article class="card pricing__card pricing__card--highlight">
+              <div class="pricing__label">Growth</div>
+              <div class="pricing__price">$12<span>/mo</span></div>
+              <ul>
+                <li>Higher limits</li>
+                <li>Shared vaults</li>
+                <li>Priority support</li>
+              </ul>
+              <button
+                class="button button--primary js-open-invite track-cta"
+                type="button"
+              >
+                Choose Growth
+              </button>
+            </article>
+            <article class="card pricing__card">
+              <div class="pricing__label">Scale</div>
+              <div class="pricing__price">Let’s talk</div>
+              <ul>
+                <li>Dedicated manager</li>
+                <li>Custom controls</li>
+                <li>API-first workflows</li>
+              </ul>
+              <button
+                class="button button--primary js-open-invite track-cta"
+                type="button"
+              >
+                Contact sales
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-heading">
+            <h2>What our customers say</h2>
+          </div>
+          <div class="testimonial__viewport">
+            <div class="testimonial__track">
+              <article class="card testimonial" data-index="0">
+                <p class="testimonial__quote">
+                  “Keeps me on budget without feeling restrictive.”
+                </p>
+                <p class="testimonial__author">— Amina, Nairobi</p>
+              </article>
+              <article class="card testimonial" data-index="1">
+                <p class="testimonial__quote">
+                  “Travel fees disappeared and the app is effortless.”
+                </p>
+                <p class="testimonial__author">— Liam, London</p>
+              </article>
+              <article class="card testimonial" data-index="2">
+                <p class="testimonial__quote">
+                  “Shared vaults keep our family spend clear.”
+                </p>
+                <p class="testimonial__author">— Priya, Mumbai</p>
+              </article>
+            </div>
+            <div class="testimonial__controls">
+              <button
+                type="button"
+                class="button button--ghost js-testimonial-prev"
+                aria-label="Previous testimonial"
+              >
+                ‹
+              </button>
+              <button
+                type="button"
+                class="button button--ghost js-testimonial-next"
+                aria-label="Next testimonial"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Frequently asked questions</h2>
+            <p>Quick answers about accounts, cards, and security.</p>
+          </div>
+          <div class="faq__list">
+            <article class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                How fast can I open an account?
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                Most customers onboard in under 5 minutes with digital KYC.
+              </div>
+            </article>
+            <article class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Do you charge foreign transaction fees?
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                No FX fees on card purchases abroad; ATM fees vary by network.
+              </div>
+            </article>
+            <article class="faq__item">
+              <button class="faq__question" aria-expanded="false">
+                Can I share accounts with family or teams?
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                Yes—create shared vaults, set roles, and approve spend in real
+                time.
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact__grid">
+          <div class="section-heading">
+            <h2>Get in touch</h2>
+            <p>
+              Questions or feedback? Drop your details and our team will respond
+              shortly.
+            </p>
+            <ul class="contact__details">
+              <li><strong>Email:</strong> support@digitalbank.com</li>
+              <li><strong>Phone:</strong> +254 712 3456 7890</li>
+              <li>
+                <strong>Head office:</strong> 7th Floor, Westlands Hub, Waiyaki
+                Way, Nairobi, Kenya
+              </li>
+              <li>
+                <strong>Nairobi postal:</strong> P.O. Box 5678-00100, Nairobi,
+                Kenya
+              </li>
+              <li>
+                <strong>Hours:</strong> Mon–Fri, 8:00–18:00 (Nairobi, EAT)
+              </li>
+            </ul>
+            <div
+              class="contact__map"
+              role="img"
+              aria-label="Map showing Nairobi headquarters"
+            >
+              <iframe
+                title="Digitalbank Nairobi HQ"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3998.9599970850733!2d36.802!3d-1.2664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f16c78e6e9f3f%3A0x1c0b0f1e7d6a5d!2sWestlands%20Hub!5e0!3m2!1sen!2ske!4v1700000000000!5m2!1sen!2ske"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <a
+              class="button button--ghost"
+              href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3ADigitalbank%20Support%0AORG%3ADigitalbank%0ATEL%3BTYPE%3Dwork%3A%2B1%20%28800%29%20555-0199%0AEMAIL%3BTYPE%3Dwork%3Asupport%40digitalbank.com%0AADR%3BTYPE%3Dwork%3A%3B%3B7th%20Floor%2C%20Westlands%20Hub%3B%3BNairobi%3B%3B00100%3BKenya%0AEND%3AVCARD"
+              download="digitalbank-contact.vcf"
+              >Download vCard</a
+            >
+          </div>
+          <form id="contact-form" novalidate class="card contact__form">
+            <label class="field">
+              <span>Topic</span>
+              <select name="topic" required>
+                <option value="">Choose a topic</option>
+                <option>General question</option>
+                <option>Product feedback</option>
+                <option>Partnership</option>
+                <option>Press</option>
+              </select>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="4" required></textarea>
+              <small class="error" aria-live="polite"></small>
+            </label>
+            <button type="submit" class="button button--primary">
+              Send message
+            </button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="images/logo-light.svg" alt="Digitalbank" />
+          <div class="footer__social">
+            <a
+              href="https://www.facebook.com"
+              aria-label="Digitalbank on Facebook"
+              target="_blank"
+              ><img src="images/icon-facebook.svg" alt=""
+            /></a>
+            <a
+              href="https://www.youtube.com"
+              aria-label="Digitalbank on YouTube"
+              target="_blank"
+              ><img src="images/icon-youtube.svg" alt=""
+            /></a>
+            <a
+              href="https://www.twitter.com"
+              aria-label="Digitalbank on Twitter"
+              target="_blank"
+              ><img src="images/icon-twitter.svg" alt=""
+            /></a>
+            <a
+              href="https://www.pinterest.com"
+              aria-label="Digitalbank on Pinterest"
+              target="_blank"
+              ><img src="images/icon-pinterest.svg" alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com"
+              aria-label="Digitalbank on Instagram"
+              target="_blank"
+              ><img src="images/icon-instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+          <a href="#blog">Blog</a>
+        </div>
+        <div class="footer__links">
+          <a href="#careers">Careers</a>
+          <a href="#support">Support</a>
+          <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="footer__cta" id="cta">
+          <a
+            class="button button--primary track-cta js-open-invite"
+            href="#home"
+            >Request Invite</a
+          >
+          <p class="footer__copyright">
+            ©<a
+              href="https://github.com/Aya-Mousa62"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Aya Mousa</a
+            >. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="invite-title"
+    >
+      <div class="modal__backdrop"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Close invite form">×</button>
+        <h2 id="invite-title">Request an invite</h2>
+        <form id="invite-form" novalidate class="modal__form">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="invite-name" required />
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="invite-email" required />
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <label class="field">
+            <span>Plan</span>
+            <select name="invite-plan" required>
+              <option value="">Choose a plan</option>
+              <option>Starter</option>
+              <option>Growth</option>
+              <option>Scale</option>
+            </select>
+            <small class="error" aria-live="polite"></small>
+          </label>
+          <button type="submit" class="button button--primary">
+            Submit request
+          </button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const navToggle = document.querySelector(".nav__toggle");
+      const navMenu = document.querySelector("#nav-menu");
+      const body = document.body;
+      const themeToggle = document.querySelector(".theme-toggle");
+      const modal = document.querySelector(".modal");
+      const modalBackdrop = document.querySelector(".modal__backdrop");
+      const modalClose = document.querySelector(".modal__close");
+      const inviteForm = document.querySelector("#invite-form");
+      const contactForm = document.querySelector("#contact-form");
+      const testimonialTrack = document.querySelector(".testimonial__track");
+      const testimonials = Array.from(
+        document.querySelectorAll(".testimonial")
+      );
+      const faqButtons = Array.from(
+        document.querySelectorAll(".faq__question")
+      );
+      const ctaButtons = Array.from(document.querySelectorAll(".track-cta"));
+      const openInviteButtons = Array.from(
+        document.querySelectorAll(".js-open-invite")
+      );
+      const testimonialPrev = document.querySelector(".js-testimonial-prev");
+      const testimonialNext = document.querySelector(".js-testimonial-next");
+
+      let navTrapListener = null;
+      let modalTrapListener = null;
+      let activeTestimonial = 0;
+
+      const setTheme = (mode) => {
+        body.dataset.theme = mode;
+        localStorage.setItem("db-theme", mode);
+      };
+
+      const initTheme = () => {
+        const stored = localStorage.getItem("db-theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        setTheme(stored || (prefersDark ? "dark" : "light"));
+      };
+
+      const toggleTheme = () => {
+        const current = body.dataset.theme === "dark" ? "light" : "dark";
+        setTheme(current);
+      };
+
+      const setNavTrap = (enabled) => {
+        if (enabled) {
+          const focusableItems = Array.from(navMenu.querySelectorAll("a"));
+          const ordered = [navToggle, ...focusableItems];
+
+          navTrapListener = (event) => {
+            const { key, shiftKey } = event;
+            if (key === "Escape") {
+              toggleMenu(false);
+              navToggle.focus();
+              return;
+            }
+            if (key !== "Tab") return;
+            const first = ordered[0];
+            const last = ordered[ordered.length - 1];
+            const active = document.activeElement;
+            if (!shiftKey && active === last) {
+              event.preventDefault();
+              first.focus();
+            } else if (shiftKey && (active === first || active === navToggle)) {
+              event.preventDefault();
+              last.focus();
+            }
+          };
+          document.addEventListener("keydown", navTrapListener);
+        } else if (navTrapListener) {
+          document.removeEventListener("keydown", navTrapListener);
+          navTrapListener = null;
+        }
+      };
+
+      const toggleMenu = (open) => {
+        navToggle.setAttribute("aria-expanded", String(open));
+        navMenu.classList.toggle("nav__links--open", open);
+        body.classList.toggle("no-scroll", open);
+        setNavTrap(open);
+      };
+
+      navToggle?.addEventListener("click", () => {
+        const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+        toggleMenu(!isOpen);
+      });
+
+      navMenu?.addEventListener("click", (event) => {
+        if (event.target.tagName === "A") {
+          toggleMenu(false);
+        }
+      });
+
+      const focusTrap = (container, enabled, onEscape) => {
+        const focusable = container.querySelectorAll(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        if (enabled) {
+          modalTrapListener = (event) => {
+            const { key, shiftKey } = event;
+            if (key === "Escape") {
+              onEscape?.();
+              return;
+            }
+            if (key !== "Tab" || !focusable.length) return;
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            const active = document.activeElement;
+            if (!shiftKey && active === last) {
+              event.preventDefault();
+              first.focus();
+            } else if (shiftKey && active === first) {
+              event.preventDefault();
+              last.focus();
+            }
+          };
+          document.addEventListener("keydown", modalTrapListener);
+        } else if (modalTrapListener) {
+          document.removeEventListener("keydown", modalTrapListener);
+          modalTrapListener = null;
+        }
+      };
+
+      const toggleModal = (open) => {
+        modal.classList.toggle("modal--open", open);
+        body.classList.toggle("no-scroll", open);
+        if (open) {
+          focusTrap(modal, true, () => toggleModal(false));
+          const firstField = modal.querySelector("input, select, button");
+          firstField?.focus();
+        } else {
+          focusTrap(modal, false);
+        }
+      };
+
+      openInviteButtons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          toggleModal(true);
+        });
+      });
+
+      modalBackdrop?.addEventListener("click", () => toggleModal(false));
+      modalClose?.addEventListener("click", () => toggleModal(false));
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      const validateField = (field) => {
+        const value = field.value.trim();
+        const errorEl = field.parentElement.querySelector(".error");
+        let message = "";
+        if ((field.name === "name" || field.name === "invite-name") && !value) {
+          message = "Please enter your name.";
+        } else if (
+          (field.name === "topic" || field.name === "invite-plan") &&
+          !value
+        ) {
+          message = "Choose an option so we can route your request.";
+        } else if (field.name === "email" || field.name === "invite-email") {
+          if (!value) {
+            message = "Email is required.";
+          } else if (!emailPattern.test(value)) {
+            message = "Enter a valid email address.";
+          }
+        } else if (field.name === "message" && value.length < 10) {
+          message = "Message should be at least 10 characters.";
+        }
+
+        field.classList.toggle("input-error", Boolean(message));
+        if (errorEl) errorEl.textContent = message;
+        return !message;
+      };
+
+      const handleForm = (form) => {
+        const statusEl = form.querySelector(".form-status");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          statusEl.textContent = "";
+          const fields = Array.from(
+            form.querySelectorAll("input, textarea, select")
+          );
+          const isValid = fields.every(validateField);
+          if (isValid) {
+            form.reset();
+            statusEl.textContent = "Thanks! Your message has been received.";
+            if (form.id === "invite-form") {
+              toggleModal(false);
+            }
+          } else {
+            statusEl.textContent = "Please fix the errors above.";
+          }
+        });
+
+        form.querySelectorAll("input, textarea, select").forEach((field) => {
+          field.addEventListener("blur", () => validateField(field));
+          field.addEventListener("input", () => {
+            if (field.classList.contains("input-error")) validateField(field);
+          });
+        });
+      };
+
+      inviteForm && handleForm(inviteForm);
+      contactForm && handleForm(contactForm);
+
+      faqButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const expanded = btn.getAttribute("aria-expanded") === "true";
+          faqButtons.forEach((b) => b.setAttribute("aria-expanded", "false"));
+          document
+            .querySelectorAll(".faq__answer")
+            .forEach((ans) => ans.classList.remove("faq__answer--open"));
+          if (!expanded) {
+            btn.setAttribute("aria-expanded", "true");
+            btn.nextElementSibling.classList.add("faq__answer--open");
+          }
+        });
+      });
+
+      const updateTestimonials = () => {
+        if (!testimonialTrack) return;
+        const offset = -activeTestimonial * 100;
+        testimonialTrack.style.transform = `translateX(${offset}%)`;
+      };
+
+      testimonialPrev?.addEventListener("click", () => {
+        activeTestimonial =
+          (activeTestimonial - 1 + testimonials.length) % testimonials.length;
+        updateTestimonials();
+      });
+
+      testimonialNext?.addEventListener("click", () => {
+        activeTestimonial = (activeTestimonial + 1) % testimonials.length;
+        updateTestimonials();
+      });
+
+      ctaButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          console.log("CTA clicked", btn.textContent.trim());
+        });
+      });
+
+      themeToggle?.addEventListener("click", toggleTheme);
+      initTheme();
+    </script>
+  </body>
+</html>
