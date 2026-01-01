@@ -1,3 +1,6 @@
+
+![Uploading live.png…](https://aya-mousa62.github.io/bank-landing-page/)
+
 # Digitalbank Landing Page
 
 A modern, responsive landing page for a digital banking service featuring a clean design with dark/light theme support.
